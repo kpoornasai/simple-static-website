@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Tourism">
+    <meta name="author" content="Poorna Sai">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="30"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+   <!-- <base href="./images/" target="_blank"> --> 
+    <link rel="stylesheet" href="trip.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="sectionHome">
+              <div class="tourism-container d-flex flex-column justify-content-end">
+                <div class="tourism-card">
+                  <h1 class="main-heading">Tourism</h1>
+                  <p class="paragraph">Plan your trip.</p>
+                <button class="button" onclick="display('sectionFavouritePlaces')">
+                    Get Started
+                  </button> 
+                </div>
+              </div>
+            </div>
+            
+            <div id="sectionFavouritePlaces">
+              <div class="favourite-places-bg-container">
+                <h1 class="favourite-places-heading">Favourite Places</h1>
+                <div
+                  class="favourite-place-card-container d-flex flex-row"
+                  onclick="display('sectionTajMahalDetailedView')"
+                >
+                  <div>
+                    <h1 class="favourite-place-card-heading">Taj Mahal</h1>
+                    <p class="favourite-place-card-description">
+                      If there was just one symbol to represent all of India, it would be the Taj Mahal
+                    </p>
+                  </div>
+                  <img
+                    src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-img.png"
+                    class="favourite-place-card-image"
+                  />
+                </div>
+                <div
+                  class="favourite-place-card-container d-flex flex-row"
+                  onclick="display('sectionGoldenTempleDetailedView')"
+                >
+                  <div>
+                    <h1 class="favourite-place-card-heading">Golden Temple</h1>
+                    <p class="favourite-place-card-description">
+                      Amritsar is world-famous for the beautiful and highly revered Golden Temple
+                    </p>
+                  </div>
+                  <img
+                    src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/golden-temple-img.png"
+                    class="favourite-place-card-image"
+                  />
+                </div>
+                <div class="favourite-place-card-container d-flex flex-row">
+                  <div>
+                    <h1 class="favourite-place-card-heading">Mysore Palace</h1>
+                    <p class="favourite-place-card-description">
+                      The Mysore Palace is a historical palace and the royal residence at Mysore .
+                    </p>
+                  </div>
+                  <img
+                    src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/mysore-palace-img.png"
+                    class="favourite-place-card-image"
+                  />
+                </div>
+                <div class="favourite-place-card-container d-flex flex-row">
+                  <div>
+                    <h1 class="favourite-place-card-heading">Varanasi Temple</h1>
+                    <p class="favourite-place-card-description">
+                      Varanasi Temple is most famous Hindu temples dedicated to Lord Shiva.
+                    </p>
+                  </div>
+                  <img
+                    src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/varanasi-temple-img.png"
+                    class="favourite-place-card-image"
+                  />
+                </div>
+                <button class="btn btn-dark" onclick="display('sectionHome')">back</button>
+              </div>
+            </div>
+         
+            <div id="sectionTajMahalDetailedView">
+              <div class="detailed-view-bg-container">
+                <h1 class="detailed-view-heading">Detailed View</h1>
+                <div class="detailed-view-card-container">
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c1-img.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c2-img.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c3-img.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+              
+                  <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">Taj Mahal</h1>
+                    <p class="detailed-view-card-description">
+                      The Taj Mahal is considered to be the greatest architectural achievement in the whole range of Indo-Islamic architecture. It recognised architectonic beauty has a rhythmic combination of solid and voids, concave and convex and light shadow; such as arches and domes further increases the aesthetic aspect. Not a piece of architecture, as other buildings are, but the proud passions of an emperor’s love wrought in living stones.
+                    </p>
+                  </div>
+                </div>
+                <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+                  back
+                </button>
+              </div>
+            </div>
+             
+            <div id="sectionGoldenTempleDetailedView">
+              <div class="detailed-view-bg-container">
+                <h1 class="detailed-view-heading">Detailed View</h1>
+                <div class="detailed-view-card-container">
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/goldentemple1-img.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/goldentemple2-img.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/goldentemple3-img.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+             
+                  <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">Golden Temple</h1>
+                    <p class="detailed-view-card-description">
+                      The Golden Temple, also known as Harmandir Sahib, meaning "abode of God", is a gurdwara located in the city of Amritsar, Punjab, India.The gurdwara is built around a man-made pool (sarovar) that was completed by the fourth Sikh Guru, Guru Ram Das in 1577.
+                    </p>
+                  </div>
+                </div>
+                <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+                  back
+                </button>
+              </div>
+    </div>
+        
+            <script>
+               document.addEventListener("DOMContentLoaded", function()
+        {
+        const sections = document.querySelectorAll('[id^="section"]');
+
+   
+
+if (sections.length > 1) {
+  const sectionOne = sections[0];
+  sections.forEach((section) => {
+    if (section != sectionOne) {
+      section.style.display = "none";
+    }
+  });
+  section.style.display = "block";
+}
+    });
+
+function display(sectionId)  {
+  makeRemainingScreensInvisible(sectionId);
+  const section = document.getElementById(sectionId);
+  if(section) {
+  section.style.display = "block";
+  window.scrollTo(0, 0);
+    }
+}
+function
+ makeRemainingScreensInvisible(sectionId)  { 
+  const sections = document.querySelectorAll('[id^="section"]');
+  sections.forEach((section) => {
+    if (section.id !== sectionId) {
+      section.style.display = "none";
+    }
+  });
+        }
+            </script>
+
+          </body>
+    
+</html>
